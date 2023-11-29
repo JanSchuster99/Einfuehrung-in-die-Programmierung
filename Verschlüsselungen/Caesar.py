@@ -6,7 +6,7 @@ def shift(chosenString, chosenShift):
         if chosenString[i].isalpha():
             if chosenString[i].isupper():
                 letterIndex = ord(chosenString[i])-ord("A")
-                shiftedString = shiftedString + chr((letterIndex  + chosenShift)% 26 + ord("A"))
+                shiftedString = shiftedString + chr((letterIndex + chosenShift)% 26 + ord("A"))
             else:
                 ord(chosenString[i])-ord("a") 
                 shiftedString = shiftedString + chr((letterIndex + chosenShift) % 26 + ord("a"))
