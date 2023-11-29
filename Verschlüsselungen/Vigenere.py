@@ -1,4 +1,4 @@
-choice = "y"
+
 def shift(chosenString, key):
     shiftedString = ""
     for i in range(0, len(chosenString)):
@@ -19,12 +19,11 @@ def adjustKey(chosenString, chosenKey):
     for i in range(0, len(chosenString)):
         adjustedKey = adjustedKey + chosenKey[i%len(chosenKey)]
     return adjustedKey
-
+choice = "y"
 while choice == "y":
     chosenString = input("Geben sie ihren String ein: ")
     chosenKey = input("Geben sie den gewünschten Shift ein: ")
     adjustedKey = adjustKey(chosenString, chosenKey)
-    print(adjustedKey)
     shiftedString = shift(chosenString, adjustedKey)
     print("Verschlüsselter String: "+ shiftedString)
     choice = input("Nochmal? (y eingeben zum Wiederholen): ")
