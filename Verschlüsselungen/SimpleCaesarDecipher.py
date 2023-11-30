@@ -1,4 +1,4 @@
-#Nur für Demo!!
+#!!!Nur für Demo in der Vorlesung!!!
 cyph = input("Bitte String eingeben: ")
 for i in range(0, 26):
     decyph = ""
