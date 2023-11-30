@@ -24,7 +24,7 @@ choice = "y"
 
 while choice == "y":
     chosenString = input("Geben sie ihren String ein: ")
-    chosenKey = input("Geben sie den gewünschten Shift ein: ")
+    chosenKey = input("Geben sie den gewünschten Key ein: ")
     adjustedKey = adjustKey(chosenString, chosenKey)
     shiftedString = shift(chosenString, adjustedKey)
     print("Verschlüsselter String: "+ shiftedString)
